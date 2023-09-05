@@ -1,8 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Work+Sans:ital,wght@0,400;1,300&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.borderRadius{
+.borderRadius {
   border-radius: 0px 32px 32px 0px;
+}
+#homeRoute a.active {
+  background: #f30050;
+  
+  font-weight:600;
+  color: var(--Cultured-Grey, #f7f9f9);
+  
+}
+
+#homeRoute li {
+  width: 288px;
+  height: 65px;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+  color: var(--Cultured-Grey, #f7f9f9);
 }
