@@ -7,7 +7,7 @@ const Sidebar = () => {
   console.log(menuOptions);
   return (
     <div className="h-[100vh] flex flex-col fixed top-0 left-0 w-[288px] bg-sbarbk borderRadius">
-      <nav className="h-[85vh]">
+      <nav className="h-[78vh]">
         <div className="flex flex-row mt-[29px] justify-center items-center gap-5 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
