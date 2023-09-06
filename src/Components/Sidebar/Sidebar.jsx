@@ -4,7 +4,7 @@ import NavOption from "./NavOption";
 import SocilMedia from "./SocilMedia";
 
 const Sidebar = () => {
-  console.log(menuOptions);
+  
   return (
     <div className="h-[100vh] flex flex-col fixed top-0 left-0 w-[288px] bg-sbarbk borderRadius sm:invisible md:visible sm:z-10 md:z-0">
       <nav className="h-[78vh]">

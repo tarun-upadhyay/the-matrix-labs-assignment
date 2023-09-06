@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c1f1f01a.css",
+    "main.js": "/static/js/main.54df223f.js",
+    "static/media/fluent_pair-24-filled.svg": "/static/media/fluent_pair-24-filled.31a883e6da6fc4901946fd4bce7d6c09.svg",
+    "index.html": "/index.html",
+    "static/media/ic_baseline-token.svg": "/static/media/ic_baseline-token.b5263dd258591723b54d1b3ee68d18d5.svg",
+    "main.c1f1f01a.css.map": "/static/css/main.c1f1f01a.css.map",
+    "main.54df223f.js.map": "/static/js/main.54df223f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1f1f01a.css",
+    "static/js/main.54df223f.js"
+  ]
+}
