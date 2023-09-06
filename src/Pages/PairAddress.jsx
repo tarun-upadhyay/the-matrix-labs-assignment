@@ -72,7 +72,7 @@ const PairAddress = () => {
        
           <div>
             <p className="font-wsans text-xl text-[#f7f9f9] mt-5">
-              Token Search Result
+             Pair Search Result
             </p>
           </div>
           <div className="">
