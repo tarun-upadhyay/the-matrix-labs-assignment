@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Work+Sans:ital,wght@0,400;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Work+Sans:ital,wght@0,400;1,300&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,36 +6,47 @@
 .borderRadius {
   border-radius: 0px 32px 32px 0px;
 }
-#homeRoute a.active {
-  background: #f30050;
-  
-  font-weight:600;
-  color: var(--Cultured-Grey, #f7f9f9);
-  
-}
 
-#homeRoute li {
-  width: 288px;
-  height: 65px;
- 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Work Sans;
-  font-size: 20px;
+.inputClass {
+  width: 88%;
+  height: 50px;
+  flex-shrink: 0;
+  padding: 10 13px;
+  padding-left: 21px;
+
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 28px; /* 140% */
-  color: var(--Cultured-Grey, #f7f9f9);
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 20px;
+  background: linear-gradient(
+    95deg,
+    rgba(124, 15, 53, 0.2) 4.79%,
+    rgba(88, 18, 102, 0.2) 100%
+  );
 }
-
-.inputClass{
-  width: 265px;
-height: 50px;
-flex-shrink: 0;
-padding:20px;
-border-radius: 20px;
-color:#fff;
-border: 1px solid #FFF;
-background: linear-gradient(95deg, rgba(124, 15, 53, 0.20) 4.79%, rgba(88, 18, 102, 0.20) 100%);
+input:focus {
+  border: none;
+}
+.connectBtnSm {
+  color: #fff;
+  width: 83px;
+  height: 27.667px;
+  flex-shrink: 0;
+  font-size: 8.513px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 10.641px;
+  background: linear-gradient(95deg, #7c0f35 7.59%, #581266 104.01%);
+  position: absolute;
+  right: 32px;
+  top: 39.57px;
+}
+.connectBtnMd {
+  position: absolute;
+  right: 44px;
+  top: 24px;
 }

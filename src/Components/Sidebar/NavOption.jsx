@@ -1,39 +1,22 @@
 import React, { useEffect } from "react";
-import {  NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
-const NavOption = ({ title, svg, exact, route }) => {
-  const shouldSetBgColor = window.location.href.includes("pairaddress");
+const NavOption = ({ title, svg, route }) => {
   const location = useLocation();
-  
 
   useEffect(() => {}, [location.pathname]);
 
-  return exact ? (
-    <li
-      className={`flex flex-row gap-5  ${
-        !shouldSetBgColor ? "bg-mred" : "bg-transparent"
-      }`}
-    >
-      <img src={svg} alt={title} />
-      <NavLink to="/">{title}</NavLink>
-    </li>
-  ) : (
-    <li
-      className={`flex flex-row gap-5 ${
-        shouldSetBgColor ? "bg-mred" : "bg-transparent"
-      }`}
-    >
-      <img src={svg} alt={title} />
-      <NavLink
-        to={`/${route}`}
-        className={({ isActive, isPending }) =>
-          isPending ? "pending" : isActive ? "active" : ""
-        }
-      >
-        {title}
-      </NavLink>
-    </li>
+  return (
+    <NavLink to={`/${route}`}  style = {({isActive}) => ({background : isActive ? '#F30050' : "", marginBottom : "12px"})}>
+      <div className="pt-[19px] pr-[20px] pb-[22px] pl-[32px] flex items-center">
+        <img src={svg} alt={title} />
+        <p className="text-[#F7F9F9] ml-[20px] font-wsans text-[20px] leading-7">
+          {title}
+        </p>
+      </div>
+    </NavLink>
   );
+
 };
 
 export default NavOption;
