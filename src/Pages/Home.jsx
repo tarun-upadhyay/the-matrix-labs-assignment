@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ConnectButton } from '@rainbow-me/rainbowkit';
+import ConnectButton from "../Components/ConnectButton/ConnectButton";
 import SearchBar from "../Components/SearchBar/SearchBar";
 import { DataContext } from "../DataContext/DataContextProvider";
 import { getToken, tokenFailed, tokenSuccess } from "../DataContext/action";
@@ -34,10 +34,11 @@ const Home = () => {
   return (
     <div>
       <SearchBar handleSearch={handleSearch} />
-      <div className="font-poppins font-semibold absolute md:right-[44px] md:top-[24px] md:text-[16px] md:w-[156px] md:h-[52px] md:rounded-[20px] md:font-semibold">
+      {/* <div className="font-poppins font-semibold absolute md:right-[44px] md:top-[24px] md:text-[16px] md:w-[156px] md:h-[52px] md:rounded-[20px] md:font-semibold">
 
       <ConnectButton className="connectBtnSm" />
-      </div>
+      </div> */}
+      <ConnectButton/>
       <div className="pt-[95px] pl-[40px] pr-[32px] md:ml-[300px] border-[mred]">
         {state.isLoading && (
           <div className="pt-[60px] pl-[40px] pr-[10px] flex justify-center">

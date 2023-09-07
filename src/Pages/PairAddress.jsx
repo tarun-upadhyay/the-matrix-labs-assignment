@@ -1,12 +1,13 @@
 import React, { useContext } from "react";
 import SearchBar from "../Components/SearchBar/SearchBar";
 
-import { ConnectButton } from '@rainbow-me/rainbowkit';
+// import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { DataContext } from "../DataContext/DataContextProvider";
 import { getPair, getPairSuccess, pairFailed } from "../DataContext/action";
 import { BallTriangle } from "react-loader-spinner";
 import axios from "axios";
 import Card from "../Components/Card/Card";
+import ConnectButton from "../Components/ConnectButton/ConnectButton";
 const PairAddress = () => {
   const { state, dispatch } = useContext(DataContext);
 
@@ -34,9 +35,10 @@ const PairAddress = () => {
   return (
     <div>
       <SearchBar handleSearch={handleSearch} />
-      <div className="font-poppins font-semibold absolute md:right-[44px] md:top-[24px] md:text-[16px] md:w-[156px] md:h-[52px] md:rounded-[20px] md:font-semibold">
+      {/* <div className="font-poppins font-semibold absolute md:right-[44px] md:top-[24px] md:text-[16px] md:w-[156px] md:h-[52px] md:rounded-[20px] md:font-semibold">
         <ConnectButton className="connectBtnSm" />
-      </div>
+      </div> */}
+      <ConnectButton/>
       <div className="pt-[95px] pl-[40px] pr-[32px] md:ml-[300px] border-[mred]">
         {state.isLoading && (
           <div className="pt-[60px] pl-[40px] pr-[10px] flex justify-center">
